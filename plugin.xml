@@ -17,12 +17,15 @@
 	</engines>
 	
 	  <!-- android -->
-	  <platform name="android">
-	     <config-file target="AndroidManifest.xml" parent="/*/application/activity/intent-filter"> 
-	            <action android:name="android.intent.action.MAIN" />
-	            <category android:name="android.intent.category.HOME"/>
-	            <category android:name="android.intent.category.DEFAULT" />
-	     </config-file> 
-        
+	  <platform name="android"> 
+         <config-file target="AndroidManifest.xml" parent="/manifest/application"> 
+             <activity android:name=".MainActivity"> 
+                 <intent-filter> 
+                     <action android:name="android.intent.action.MAIN" /> 
+                     <category android:name="android.intent.category.HOME" /> 
+                     <category android:name="android.intent.category.DEFAULT" /> 
+                 </intent-filter> 
+             </activity> 
+         </config-file> 
 	  </platform>
 </plugin>
