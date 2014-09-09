@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.simplec.plugins.homeintent"
-	version="0.1.0">
+	version="1.0.1">
 
 	<name>Android Home Intent</name>
 	
@@ -13,7 +13,7 @@
 	<license>Apache 2.0</license>
 		
 	<engines>
-		<engine name="cordova" version=">=2.3.0" />
+		<engine name="cordova" version=">=3.0.0" />
 	</engines>
 	
 	  <!-- android -->
