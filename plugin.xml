@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.simplec.plugins.homeintent"
-	version="1.0.1">
+	version="1.0.2">
 
 	<name>Android Home Intent</name>
 	
@@ -17,15 +17,12 @@
 	</engines>
 	
 	  <!-- android -->
-	  <platform name="android"> 
-         <config-file target="AndroidManifest.xml" parent="/manifest/application"> 
-             <activity android:name=".MainActivity"> 
-                 <intent-filter> 
-                     <action android:name="android.intent.action.MAIN" /> 
-                     <category android:name="android.intent.category.HOME" /> 
-                     <category android:name="android.intent.category.DEFAULT" /> 
-                 </intent-filter> 
-             </activity> 
-         </config-file> 
+	  <platform name="android">
+	     <config-file target="AndroidManifest.xml" parent="/*/application/activity/intent-filter"> 
+	            <action android:name="android.intent.action.MAIN" />
+	            <category android:name="android.intent.category.HOME"/>
+	            <category android:name="android.intent.category.DEFAULT" />
+	     </config-file> 
+        
 	  </platform>
 </plugin>
